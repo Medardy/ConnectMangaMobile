@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { User } from '/Users/Redjohn/Documents/MOBILE/git/ConnectMangasApp/ConnectMobile/src/models/user';
-import { UserServiceProvider } from '/Users/Redjohn/Documents/MOBILE/git/ConnectMangasApp/ConnectMobile/src/providers/user-service/user-service';
+import { User } from '../../models/user';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 /**
  * Generated class for the Dashboard page.

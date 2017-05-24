@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
-import { User } from '/Users/Redjohn/Documents/MOBILE/git/ConnectMangasApp/ConnectMobile/src/models/user';
+import { User } from '../../models/user';
 import 'rxjs/add/operator/map';
 
 
