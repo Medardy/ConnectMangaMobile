@@ -12,4 +12,4 @@ Run Platform IOS :
 - ionic cordova run ios
 
 Run Platform Android
-- Ionic cordova run Android
+- Ionic cordova run android
