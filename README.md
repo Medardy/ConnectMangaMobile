@@ -10,3 +10,6 @@ if you want look differents platforms in web server :
 
 Run Platform IOS :
 - ionic cordova run ios
+
+Run Platform Android
+- Ionic cordova run android
