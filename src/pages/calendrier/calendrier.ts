@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {CalendarServiceProvider} from '../../providers/calendar-service/calendar-service';
 /**
  * Generated class for the Dashboard page.
  *
@@ -11,14 +11,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-calendrier',
   templateUrl: 'calendrier.html',
+  providers: [CalendarServiceProvider]
 })
 export class Calendrier {
+  public list: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public CalendarServiceProvider: CalendarServiceProvider){
+    this.getall();
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Calendrier');
-  }
-
+ getall() {
+ this.CalendarServiceProvider.getcalendar();
+}
+ // loadlist(){
+ //   this.CalendarServiceProvider.load()
+ //   .then(data => {
+//      this.list = data;
+//    });
+ // }
 }

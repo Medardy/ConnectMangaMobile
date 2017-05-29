@@ -16,6 +16,7 @@ import { Suivi } from '../pages/suivi/suivi';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { UserServiceProvider } from '../providers/user-service/user-service';
+import { CalendarServiceProvider } from '../providers/calendar-service/calendar-service';
 
 
 
@@ -58,6 +59,7 @@ import { UserServiceProvider } from '../providers/user-service/user-service';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserServiceProvider,
+    CalendarServiceProvider,
  
   ]
 })
